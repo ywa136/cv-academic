@@ -29,15 +29,18 @@
 % Change the value in the second set of {} to you information. If you
 % want multiple lines (like for the address), use \\ to split lines.
 
-\newcommand{\myname}{First M. Last}     % your name
-\newcommand{\websiteurl}{{https://github.com/btskinner/tex_cv}} % your site url
+\newcommand{\myname}{Wayne Yu Wang}     % your name
+\newcommand{\websiteurl}{{https://ywa136.github.io}} % your site url
 \newcommand{\websitename}{me.com}       % short url name for printing
-\newcommand{\phone}{000.000.0000}       % your phone number
-\newcommand{\email}{me@university.edu}  % your email
+\newcommand{\phone}{734.277.5499}       % your phone number
+\newcommand{\email}{wayneyw@umich.edu}  % your email
+\newcommand{\twitterurl}{{https://twitter.com/wayneywang}}  % twitter url
+\newcommand{\twitterhandle}{@wayneywang}      % twitter handle
 \newcommand{\address}{                  % NB: Assumes 3 lines
-  University Hall \\                    % {BUILDING} \\
-  PO Box 00000 \\                       % {ADDRESS} \\
-  City, ST 00000                        % {CITY, ST ZIP}
+  Department of Statistics, University of Michigan \\
+  323 West Hall \\
+  1085 South University \\    
+  Ann Arbor, MI 48109                   
 }
 
 % ======================================
@@ -303,6 +306,7 @@ language=american]{biblatex}      % for reference sections
 \begin{flushright}
   \textit{tel}: \phone \\
   \textit{web}: \href{\websiteurl}{\websitename} \\
+  \textit{twitter}: \href{\twitterurl}{\twitterhandle} \\
   \textit{email}: \href{mailto:\email}{\email}
 \end{flushright}
 \end{minipage}
@@ -335,9 +339,9 @@ language=american]{biblatex}      % for reference sections
 
 \section*{Education}
 \begin{tabularx}{\linewidth}{\threecols}
-  YYYY&Program, University&Ph.D. \\ % or YYYY (expected)
-  YYYY&Program, University&M.A. \\
-  YYYY&Program, University&B.A. \\
+  2023 (expected) & Statistics, University of Michigan & Ph.D. \\
+  2018 & Statistics, University of British Columbia & M.Sc. \\
+  2016 & Actuarial Science, Simon Fraser University & B.Sc. \\
 \end{tabularx}
 
 % ======================================
@@ -349,11 +353,11 @@ language=american]{biblatex}      % for reference sections
 \section*{Research Interests}
 
 \hspace{-.25em}\begin{itemize*}[itemjoin={{; }}, label={}]
-\item Interest 1
-\item interest 2
-\item interest 3
-\item interest 4
-\item interest 5
+\item High-dimensional inference
+\item Graphical models 
+\item (approximate) Bayesian inference
+\item Generative models for spatio-temporal processes
+\item Applications in natural sciences
 \end{itemize*}
 
 % ======================================
@@ -389,14 +393,14 @@ env = mybib]
 % WORKING PAPERS
 % ======================================
 
-\begin{refsection}
-\section*{Working Papers}
-\nocite{*}
-\printbibliography[heading = none,
-keyword = working,
-check = recent,
-env = mybib]
-\end{refsection}
+% \begin{refsection}
+% \section*{Working Papers}
+% \nocite{*}
+% \printbibliography[heading = none,
+% keyword = working,
+% check = recent,
+% env = mybib]
+% \end{refsection}
 
 % ======================================
 % PRESENTATIONS
@@ -407,12 +411,12 @@ env = mybib]
 % delete the subsections and have one PUBLICATIONS section.
 
 \section*{Presentations}
-\subsection*{Peer-reviewed conference presentations}
+\subsection*{Contributed conference presentations}
 \begin{refsection}
 \nocite{*}
 \printbibliography[heading = none,
 keyword = conference,               % must have "conference" AND 
-keyword = peer,                     % "peer" to differentiate from "invited"
+keyword = contributed,                     % "peer" to differentiate from "invited"
 env = mybib,
 check = recent]                     
 \end{refsection}                    
@@ -437,20 +441,47 @@ check = recent]
 
 \section*{Teaching}
 
-\subsection*{Instructor}
-\subsubsection*{University $\mid$ Department}
-\begin{tabularx}{\linewidth}{\twocols}
-YYYY&COURSE NUM: \textit{Course name} \\
-&\hspace{1em}One sentence description (optional)  \\
-&\hspace{1em}{\itshape Website/Course materials:}
-\href{https://github.com/btskinner/tex\_cv}{github.com/btskinner/tex\_cv} \\
-\end{tabularx}
+% \subsection*{Instructor}
+% \subsubsection*{University $\mid$ Department}
+% \begin{tabularx}{\linewidth}{\twocols}
+% YYYY&COURSE NUM: \textit{Course name} \\
+% &\hspace{1em}One sentence description (optional)  \\
+% &\hspace{1em}{\itshape Website/Course materials:}
+% \href{https://github.com/btskinner/tex\_cv}{github.com/btskinner/tex\_cv} \\
+% \end{tabularx}
 
 \subsection*{Teaching Assistant}
-\subsubsection*{University $\mid$ Department}
+\subsubsection*{University of Michigan $\mid$ Department of Statistics}
 \begin{tabularx}{\linewidth}{\twocols}
-YYYY & COURSE NUM: \textit{Course name} \\
-&\hspace{1em}	\textit{Instructor:} Instructor of record  \\
+2020 & STATS 551: \textit{Bayesian Modelling and Computation} \\
+&\hspace{1em}{\itshape Description:} Graduate-level introduction to Bayesian inference.  \\
+&\hspace{1em}{\itshape Course materials:} \href{https://ywa136.github.io/files/STATS551WIN2020Syllabus.pdf}{ywa136.github.io/teaching/stats551\_2020Winter} \\
+
+2019 & STATS 306: \textit{Introduction to Statistical Computing} \\
+&\hspace{1em}{\itshape Description:} Senior undergraduate-level introductory statistical computing course based on the R programming language. \\
+&\hspace{1em}{\itshape Course materials:}
+\href{https://github.com/ywa136/stats306_labs}{https://ywa136.github.io/teaching/stats306\_2019Fall} \\
+
+2019 & STATS 426: \textit{Introduction to Theoretical Statistics} \\
+&\hspace{1em}{\itshape Description:} Senior undergraduate-level introduction to theoretical statistics.  \\
+% &\hspace{1em}{\itshape Website/Course materials:}
+% \href{https://ywa136.github.io/files/STATS551WIN2020Syllabus.pdf}{Syllabus} \\
+
+2018 & STATS 250: \textit{Introduction to Statistics and Data Analysis} \\
+&\hspace{1em}{\itshape Description:} Junior undergraduate-level course in applied statistical methodology for data analysis.  \\
+% &\hspace{1em}{\itshape Website/Course materials:}
+% \href{https://ywa136.github.io/files/STATS551WIN2020Syllabus.pdf}{Syllabus} \\
+\end{tabularx}
+
+\subsubsection*{University of British Columbia $\mid$ Department of Statistics}
+\begin{tabularx}{\linewidth}{\twocols}
+2017 & STATS 251: \textit{Introductory Probability and Statistics} \\
+% &\hspace{1em}One sentence description (optional)  \\
+% &\hspace{1em}{\itshape Website/Course materials:}
+% \href{https://github.com/btskinner/tex\_cv}{github.com/btskinner/tex\_cv} \\
+
+2016 & STATS 200: \textit{Elementary Statistics for Applications} \\
+% &\hspace{1em}One sentence description (optional)  \\
 \end{tabularx}
 
 % ======================================
@@ -461,9 +492,14 @@ YYYY & COURSE NUM: \textit{Course name} \\
 
 \section*{Awards, Fellowships, and Honors}
 \begin{tabularx}{\linewidth}{\threecols}
-YYYY & Honor \\
-YYYY - YYYY & Fellowship & \$ AMOUNT \\ % if normal in your field
-
+2018 - 2019 & Department of Statistics Fellowship, UMich  \\ % can add \$ AMOUNT
+2018 & International Doctoral Fellowship, UBC. (Declined; \textbf{Five year \$$35,000$ per year fellowship awarded to the top $15$ admitted international doctoral students across the university.}) \\
+2017 & Travel Award for CBMS Regional Conference on Spatial Statistics. \\
+2016 & Statistics \& Actuarial Science Endowment Award: Academic Merit, SFU. (\textbf{Awarded to undergraduate student with the best academic performance across the department in the academic year.}) \\
+2015 & VP Research - Undergraduate Student Research Award, SFU. (\textbf{Awarded for the research project ``Robust program for automated statistical imputation of the Alzheimer's Disease Neuroimaging Initiative (ADNI) data''.}) \\
+2014 & April Allen Memorial Undergraduate Scholarship, SFU. \\
+2014 & President’s Honour List, SFU. \\
+2013 - 2016 & Dean’s Honour List, SFU. \\
 \end{tabularx}
 
 % ======================================
@@ -473,14 +509,14 @@ YYYY - YYYY & Fellowship & \$ AMOUNT \\ % if normal in your field
 % This time the list is separated by bullets as an example; use
 % whatever seems most aesthetically pleasing to your eyes.
 
-\section*{Professional Memberships}
+\section*{Services}
 
 \hspace{-.25em}\begin{itemize*}[itemjoin={{ $\bullet$}}, label={}]
-\item Organization 1
-\item Organization 2
-\item Organization 3
-\item Organization 4
-\item Organization 5
+\item Reviewer for AISTATS 2021
+% \item Organization 2
+% \item Organization 3
+% \item Organization 4
+% \item Organization 5
 \end{itemize*}
 
 % ======================================
