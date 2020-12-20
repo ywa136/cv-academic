@@ -1,6 +1,9 @@
-[Make an academic CV using LaTeX and Biber with LaTeX +
-Biber](https://github.com/btskinner/tex_cv). Rather than adding new
-publications, working papers, or presentations by hand over time,
+
+# Original README
+
+> [Make an academic CV using LaTeX and Biber with LaTeX + Biber](https://github.com/btskinner/tex_cv). 
+> Rather than adding new
+> publications, working papers, or presentations by hand over time,
 store your work products in a `.bib` file---just as you would a
 bibliography of references for a paper---and compile your CV to
 update.
