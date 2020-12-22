@@ -74,7 +74,8 @@
   pages={100409},
   year={2020},
   publisher={Elsevier},
-  url={https://www.sciencedirect.com/science/article/pii/S2211675320300038}
+  url={https://www.sciencedirect.com/science/article/pii/S2211675320300038},
+  abstract={The increasing recognition of the association between adverse human health conditions and many environmental substances as well as processes has led to the need to monitor them. An important problem that arises in environmental statistics is the design of the locations of the monitoring stations for those environmental processes of interest. One particular design criterion for monitoring networks that tries to reduce the uncertainty about predictions of unseen processes is called the maximum-entropy design. However, this design criterion involves a hard optimization problem that is computationally intractable for large data sets. Previous work of Wang et al. (2017) examined a probabilistic model that can be implemented efficiently to approximate the underlying optimization problem. In this paper, we attempt to establish statistically sound tools for assessing the quality of the approximations.}
 }
 
 @article{casquilho2018design,
@@ -87,7 +88,8 @@
   pages={e2483},
   year={2018},
   publisher={Wiley Online Library},
-  url={https://onlinelibrary.wiley.com/doi/full/10.1002/env.2483}
+  url={https://onlinelibrary.wiley.com/doi/full/10.1002/env.2483},
+  abstract={In this paper, we introduce a design strategy based on k‐determinantal point processes (k‐DPPs). The k‐DPP design is a flexible design scheme that is able to yield spatially balanced designs while also imposing diversity of the selected locations based on extra sources of information known to be related to the underlying process of interest. The methodology is able to handle both the designing and the redesigning of a monitoring network. In particular, we discuss how a k‐DPP design can be used as a randomized alternative for the space‐filling designs when the objective is to provide a good spatial coverage of the region of interest. Furthermore, we discuss how the k‐DPP optimal design objective is remarkably similar to that of entropy design for Gaussian fields. Because the optimization for entropy designs is a NP‐hard problem, we explore an approximate solution based on a k‐DPP sampling design strategy. Through a case study of augmentation of a network for monitoring temperatures, we illustrate how a k‐DPP sampling design strategy can yield an approximation for the entropy solution.}
 }
 
 @InProceedings{pmlr-v108-wang20d,
@@ -101,32 +103,39 @@
   series={Proceedings of Machine Learning Research},
   month={August},
   publisher={PMLR},
-  url={http://proceedings.mlr.press/v108/wang20d.html}
+  url={http://proceedings.mlr.press/v108/wang20d.html},
+  abstract={This paper introduces the Sylvester graphical lasso (SyGlasso) that captures multiway dependencies present in tensor-valued data. The model is based on the Sylvester equation that defines a generative model. The proposed model complements the tensor graphical lasso (Greenewald et al., 2019) that imposes a Kronecker sum model for the inverse covariance matrix, by providing an alternative Kronecker sum model that is generative and interpretable. A nodewise regression approach is adopted for estimating the conditional independence relationships among variables. The statistical convergence of the method is established, and empirical studies are provided to demonstrate the recovery of meaningful conditional dependency graphs. We apply the SyGlasso to an electroencephalography (EEG) study to compare the brain connectivity of alcoholic and nonalcoholic subjects. We demonstrate that our model can simultaneously estimate both the brain connectivity and its temporal dependencies.}
 }
 
 @article{wang2020hdsr,
 	Author = {Wang, Yu and Hougen, Conrad and Oselio, Brandon and Dempsey, Walter and Hero, Alfred},
-% 	Journal = {Harvard Data Science Review},
+	Journal = {Harvard Data Science Review},
+	Note = {under review},
 	Keywords = {submitted},
 	Title = {A geometry-driven longitudinal topic model},
-	Year = {2020}
+	Year = {2020},
+        Abstract = {A simple and scalable framework for longitudinal analysis of Twitter data is developed that combines latent topic models with computational geometric methods. Dimension reduction tools from computational geometry are applied to learn the intrinsic manifold on which the latent, temporal topics reside. Shortest path distances on the manifold are used to link together these topics. The proposed framework permits visualization of the low-dimensional embedding which provides clear interpretation of the complex, high-dimensional trajectories that may exist among latent topics. Practical application of the proposed framework is demonstrated through its ability to capture and effectively visualize natural progression of latent COVID-19 related topics learned from Twitter data. Interpretability of the trajectories is achieved by comparing to  real-world events. In addition, the framework permits study of spatial variation in Twitter behavior for learned topics. The analysis demonstrates that the proposed framework is able to capture granular-level impact of COVID-19 on public discussions. We end by arguing that Twitter data, when analyzed within the proposed framework, can serve as a valuable supplementary data stream for COVID-related studies.}
 }
 
-@article{wang2020aistats21,
+@inproceedings{wang2020aistats21,
 	Author = {Wang, Yu and Hero, Alfred},
-% 	Journal = {Harvard Data Science Review},
+	Booktitle = {Proceedings of the Twenty Fourth International Conference on Artificial Intelligence and Statistics},
+	Note = {under review},
 	Keywords = {submitted},
 	Title = {A proximal alternating linearized minimization method for tensor graphical models},
-	Year = {2020}
+	Year = {2020},
+	Abstract = {We consider the estimation of graphical models that characterize conditional dependency structure of high-dimensional tensor-variate data. In particular, we develop a significantly improved Sylvester graphical model~\citep{wang20sylvester}. Such models admit a generative stochastic representation for the tensor-variate random variable. A critical challenge of this model is the fact that its richer representation of conditional dependency leads to a highly coupled likelihood function. In this paper, we propose a proximal alternating linearized minimization method called SG-PALM for performing regularized precision matrix estimation for tensor-valued data in the Sylvester graphical modeling framework. A theoretical convergence analysis establishes linear convergence (i.e., geometric convergence rate) to a global optimum of the objective function. To demonstrate the scalability and accuracy of SG-PALM, we apply it to a novel application of forecasting solar flares from imaging data, and show that the estimated precision matrices can be utilized to construct simple and effective time series predictors for the solar atmosphere.}
 }
 
 @article{wang2020dpp,
 	Author = {Wang, Yu and Le, Nhu D and Zidek, James V},
-	Journal = {arXiv:1709.00151v3 [stat.CO]},
+	Journal = {Journal of Statistical Computation and Simulation},
+	Note = {under review},
 	Keywords = {submitted},
 	Title = {Approximately Optimal Subset Selection for Statistical Design and Modelling},
 	Year = {2019},
-	Url = {https://arxiv.org/abs/1709.00151}
+	Url = {https://arxiv.org/abs/1709.00151},
+	Abstract = {We study the problem of optimal subset selection from a set of correlated random variables. In particular, we consider the associated combinatorial optimization problem of maximizing the determinant of a symmetric positive definite matrix that characterizes the chosen subset. This problem arises in many domains, such as experimental designs, regression modeling, and environmental statistics. We establish an efficient polynomial-time algorithm using Determinantal Point Process for approximating the optimal solution to the problem. We demonstrate the advantages of our methods by presenting computational results for both synthetic and real data sets.}
 }
 
 
@@ -135,7 +144,7 @@
 	Author = {Wang, Yu},
 	Keywords = {conference, contributed},
 	Month = {October},
-	Booktitle = {Presentation at the fourth annual review for the ARO-MURI: Adaptive Exploitation of Non-Commutative Multimodal Information Structure, Ann Arbor, MI},
+	Booktitle = {The 4th annual review for the ARO-MURI: Adaptive Exploitation of Non-Commutative Multimodal Information Structure, Ann Arbor, MI},
 	Title = {Sylvester Graphical Models for Complex Spatio-Temporal Processes},
 	Year = {2020}
 }
@@ -144,7 +153,7 @@
 	Author = {Wang, Yu},
 	Keywords = {conference, contributed},
 	Month = {August},
-	Booktitle = {Conference proceedings talk at the 2020 Joint Statistical Meetings (JSM), Philadelphia, PA},
+	Booktitle = {Joint Statistical Meetings (JSM) 2020, Philadelphia, PA},
 	Title = {The Sylvester Graphical Lasso (SyGlasso)},
 	Year = {2020}
 }
@@ -153,7 +162,7 @@
 	Author = {Wang, Yu},
 	Keywords = {conference, contributed},
 	Month = {August},
-	Booktitle = {Conference proceedings talk at the AISTATS 2020, Palermo, Italy},
+	Booktitle = {AISTATS 2020, Palermo, Italy},
 	Title = {The Sylvester Graphical Lasso (SyGlasso)},
 	Year = {2020}
 }
@@ -162,7 +171,34 @@
 	Author = {Wang, Yu},
 	Keywords = {conference, invited},
 	Month = {July},
-	Booktitle = {Invited seminar talk in COVID-19 Data Science Research Special Webinar Series at the Michigan Institute for Data Science, Ann Arbor, MI},
+	Booktitle = {COVID-19 Data Science Research Special Webinar Series, Michigan Institute for Data Science, Ann Arbor, MI},
 	Title = {A scalable tool for longitudinal Twitter analysis: understanding the impact of COVID-19 on public discourse},
 	Year = {2020}
+}
+
+@inproceedings{wang2018jsmdataexpo,
+	Author = {Wang, Yu},
+	Keywords = {conference, contributed},
+	Month = {August},
+	Booktitle = {Joint Statistical Meetings (JSM) 2018, Vancouver, Canada},
+	Title = {Uncertainty Quantification for Minimum and Maximum Temperature Forecast},
+	Year = {2018}	
+}
+
+@inproceedings{wang2018dpp,
+	Author = {Wang, Yu},
+	Keywords = {conference, contributed},
+	Month = {June},
+	Booktitle = {The 46th Annual Meeting of the Statistical Society of Canada (SSC) 2018, Montreal, Canada},
+	Title = {Determinantal point processes with application to spatial design},
+	Year = {2018}
+}
+
+@inproceedings{wang2017dpp,
+	Author = {Wang, Yu},
+	Keywords = {conference, contributed},
+	Month = {October},
+	Booktitle = {SFU/UBC Joint Statistics Seminar},
+	Title = {Determinantal point processes with application to spatial design},
+	Year = {2017}
 }
