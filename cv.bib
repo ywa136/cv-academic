@@ -117,14 +117,14 @@
         Abstract = {A simple and scalable framework for longitudinal analysis of Twitter data is developed that combines latent topic models with computational geometric methods. Dimension reduction tools from computational geometry are applied to learn the intrinsic manifold on which the latent, temporal topics reside. Shortest path distances on the manifold are used to link together these topics. The proposed framework permits visualization of the low-dimensional embedding which provides clear interpretation of the complex, high-dimensional trajectories that may exist among latent topics. Practical application of the proposed framework is demonstrated through its ability to capture and effectively visualize natural progression of latent COVID-19 related topics learned from Twitter data. Interpretability of the trajectories is achieved by comparing to  real-world events. In addition, the framework permits study of spatial variation in Twitter behavior for learned topics. The analysis demonstrates that the proposed framework is able to capture granular-level impact of COVID-19 on public discussions. We end by arguing that Twitter data, when analyzed within the proposed framework, can serve as a valuable supplementary data stream for COVID-related studies.}
 }
 
-@inproceedings{wang2020aistats21,
+@inproceedings{wang2020icml21,
 	Author = {Wang, Yu and Hero, Alfred},
-	Booktitle = {Proceedings of the Twenty Fourth International Conference on Artificial Intelligence and Statistics},
+	Booktitle = {Proceedings of the Thirty Eighth International Conference on Machine Learning},
 	Note = {under review},
 	Keywords = {submitted},
-	Title = {A proximal alternating linearized minimization method for tensor graphical models},
-	Year = {2020},
-	Abstract = {We consider the estimation of graphical models that characterize conditional dependency structure of high-dimensional tensor-variate data. In particular, we develop a significantly improved Sylvester graphical model~\citep{wang20sylvester}. Such models admit a generative stochastic representation for the tensor-variate random variable. A critical challenge of this model is the fact that its richer representation of conditional dependency leads to a highly coupled likelihood function. In this paper, we propose a proximal alternating linearized minimization method called SG-PALM for performing regularized precision matrix estimation for tensor-valued data in the Sylvester graphical modeling framework. A theoretical convergence analysis establishes linear convergence (i.e., geometric convergence rate) to a global optimum of the objective function. To demonstrate the scalability and accuracy of SG-PALM, we apply it to a novel application of forecasting solar flares from imaging data, and show that the estimated precision matrices can be utilized to construct simple and effective time series predictors for the solar atmosphere.}
+	Title = {SG-PALM: a Fast Physically Interpretable Tensor Graphical Model},
+	Year = {2021},
+	Abstract = {We propose a new graphical model inference procedure, called SG-PALM, for learning conditional dependency structure of high-dimensional tensor-variate data. Unlike most other tensor graphical models the proposed model is interpretable and computationally scalable to high dimension. Physical interpretability follows from the Sylvester generative (SG) model on which SG-PALM is based: the model is exact for any observation process that is a solution of a partial differential equation of Poisson type. Scalability follows from the fast proximal alternating linearized minimization (PALM) procedure that SG-PALM uses during training. We establish that SG-PALM converges linearly (i.e., geometric convergence rate) to a global optimum of its objective function. We demonstrate scalability and accuracy of SG-PALM for an important but challenging climate prediction problem: spatio-temporal forecasting of solar flares from multimodal imaging data.}
 }
 
 @article{wang2020dpp,
@@ -140,6 +140,24 @@
 
 
 %% Presentations (contributed, invited)
+@inproceedings{wang2021jsm,
+	Author = {Wang, Yu},
+	Keywords = {conference, contributed},
+	Month = {August},
+	Booktitle = {Joint Statistical Meetings (JSM) 2021, Seattle, WA},
+	Title = {Gaussian graphical models for active region modeling and flare prediction},
+	Year = {2021}
+}
+
+@inproceedings{wang2021sdss,
+	Author = {Wang, Yu},
+	Keywords = {conference, contributed},
+	Month = {June},
+	Booktitle = {2021 Symposium on Data Science and Statistics},
+	Title = {A Geometry-Driven Longitudinal Topic Model},
+	Year = {2021}
+}
+
 @inproceedings{wang2020aromuri,
 	Author = {Wang, Yu},
 	Keywords = {conference, contributed},
